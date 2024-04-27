@@ -48,14 +48,14 @@
             bindings = <&kp>, <&kp>;
         };
 
-        mm: mm {
+        mm: meta_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "MetaMod";
+            label = "meta_mod";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <135>;
             flavor = "balanced";
-            bindings = <&kp>, <&mo>;
+            bindings = <&mo>, <&kp>;
         };
     };
 
@@ -67,7 +67,7 @@
 &bm TILDE TAB  &kp Q  &kp W        &kp F         &kp P            &kp G     &kp J  &kp L         &kp U      &kp Y     &kp SEMI       &kp BSPC
 &kp LSHFT      &kp A  &kp R        &kp S         &kp T            &kp D     &kp H  &kp N         &kp E      &kp I     &kp O          &kp SQT
 &kp LCTRL      &kp Z  &bm K_CUT X  &bm K_COPY C  &bm K_PASTE V    &kp B     &kp K  &kp M         &kp COMMA  &kp DOT   &bm BSLH FSLH  &bm GRAVE TILDE
-                      &kp LALT     &mm LWIN 1    &sm LSHFT SPACE  &kp K_PP  &mo 3  &bm BSPC RET  &mo 2      &kp LGUI
+                      &kp LALT     &mm 1 LGUI    &sm LSHFT SPACE  &kp K_PP  &mo 3  &bm BSPC RET  &mo 2      &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp K_NEXT K_PREVIOUS>;
