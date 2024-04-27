@@ -1,0 +1,12 @@
+file_format: "1"
+id: tusks
+name: Tusks MK II
+type: shield
+url: https://github.com/Uthol/tusks-zmk/
+requires: [nice_nano_v2]
+features:
+  - keys
+  - encoder
+siblings:
+  - tusks_left
+  - tusks_right
