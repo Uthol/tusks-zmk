@@ -66,10 +66,10 @@
 
         default {
             bindings = <
-&kp TAB    &kp Q  &kp W     &kp F       &kp P            &kp G     &kp J  &kp L         &kp U      &kp Y     &kp SEMI       &kp BSPC
-&kp LSHFT  &kp A  &kp R     &kp S       &kp T            &kp D     &kp H  &kp N         &kp E      &kp I     &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X     &kp C       &kp V            &kp B     &kp K  &kp M         &kp COMMA  &kp DOT   &bm BSLH FSLH  &bm GRAVE TILDE
-                  &kp LALT  &mm LGUI 1  &sm LSHFT SPACE  &kp K_PP  &mo 3  &bm BSPC RET  &mo 2      &kp LGUI
+&bm TILDE TAB  &kp Q  &kp W        &kp F         &kp P            &kp G     &kp J  &kp L         &kp U      &kp Y     &kp SEMI       &kp BSPC
+&kp LSHFT      &kp A  &kp R        &kp S         &kp T            &kp D     &kp H  &kp N         &kp E      &kp I     &kp O          &kp SQT
+&kp LCTRL      &kp Z  &bm K_CUT X  &bm K_COPY C  &bm K_PASTE V    &kp B     &kp K  &kp M         &kp COMMA  &kp DOT   &bm BSLH FSLH  &bm GRAVE TILDE
+                      &kp LALT     &mm LGUI 1    &sm LSHFT SPACE  &kp K_PP  &mo 3  &bm BSPC RET  &mo 2      &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp K_NEXT K_PREVIOUS>;
