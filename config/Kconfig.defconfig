@@ -1,0 +1,16 @@
+if SHIELD_TUSKS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Tusk MK II"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+
