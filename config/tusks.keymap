@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define LWR   1
@@ -13,6 +14,40 @@
 #define SET   3
 
 / {
+        behaviors {
+
+        bm: bottom_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BOTTOM_ROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        cm: code_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CODE_ROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+        };
+
+        sm: space_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_MOD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,8 +55,8 @@
             bindings = <
 &kp TAB    &kp Q  &kp W     &kp F    &kp P      &kp G     &kp J    &kp L    &kp U      &kp Y     &kp SEMI       &kp BSPC
 &kp LSHFT  &kp A  &kp R     &kp S    &kp T      &kp D     &kp H    &kp N    &kp E      &kp I     &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X     &kp C    &kp V      &kp B     &kp K    &kp M    &kp COMMA  &kp DOT   &mt BSLH FSLH  &gresc
-                  &kp LALT  &mo LWR  &kp SPACE  &kp K_PP  &mo SET  &kp RET  &mo RAI    &kp LGUI
+&kp LCTRL  &kp Z  &kp X     &kp C    &kp V      &kp B     &kp K    &kp M    &kp COMMA  &kp DOT   &bm BSLH FSLH  &gresc
+                  &kp LALT  &cm LGUI LWR  &sm LSHFT SPACE   &kp K_PP  &mo SET  &bm BSPC RET  &mo RAI    &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp K_NEXT K_PREVIOUS>;
