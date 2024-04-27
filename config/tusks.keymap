@@ -36,6 +36,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
+            label = "LWR";
         };
 
         raise_layer {
@@ -47,6 +48,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
+            label = "RAI";
         };
 
         settings_layer {
@@ -58,6 +60,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
+            label = "SET";
         };
     };
 };
