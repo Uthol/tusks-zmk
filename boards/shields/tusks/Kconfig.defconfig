@@ -12,5 +12,3 @@ if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT
 
 config ZMK_SPLIT
     default y
-
-
