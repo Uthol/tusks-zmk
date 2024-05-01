@@ -50,10 +50,10 @@
 
         base {
             bindings = <
-&mt TILDE TAB  &kp Q        &cz LC(W) W  &cz LC(F) F     &kp P            &kp B        &kp J  &kp L                &kp U      &kp Y     &kp SEMI             &kp BSPC
-&kp LSHFT      &cz LS(A) A  &cz LC(R) R  &cz LC(S) S     &cz LC(T) T      &kp G        &kp M  &kp N                &kp E      &kp I     &kp O                &kp SQT
-&kp LCTRL      &cz LC(Z) Z  &cz LC(X) X  &cz LC(C) C     &cz LG(D) D      &cz LC(V) V  &kp K  &kp H                &kp COMMA  &kp DOT   &mt BACKSLASH SLASH  &mt GRAVE ESC
-                            &kp LWIN     &key_mo 1 LGUI  &sm LSHFT SPACE  &kp K_PP     &mo 3  &sm BACKSPACE ENTER  &mo 2      &kp LALT
+&mt TILDE TAB  &kp Q        &cz LC(W) W  &cz LC(F) F     &kp P            &kp B               &kp J                &kp L  &kp U      &kp Y    &kp SEMI             &kp BSPC
+&kp LSHFT      &cz LS(A) A  &cz LC(R) R  &cz LC(S) S     &cz LC(T) T      &kp G               &kp M                &kp N  &kp E      &kp I    &kp O                &kp SQT
+&kp LCTRL      &cz LC(Z) Z  &cz LC(X) X  &cz LC(C) C     &cz LG(D) D      &cz LC(V) V         &kp K                &kp H  &kp COMMA  &kp DOT  &mt BACKSLASH SLASH  &mt GRAVE ESC
+                            &kp LWIN     &key_mo 1 LGUI  &sm LSHFT SPACE  &kp C_PLAY   &mo 3  &sm BACKSPACE ENTER  &mo 2  &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
@@ -62,10 +62,10 @@
 
         left_mo {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7     &kp N8     &kp N9            &kp N0             &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8     &kp F9     &kp F10           &kp F11            &kp F12
-                &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp EQUAL  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp N6  &kp N7     &kp N8     &kp N9            &kp N0             &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6          &kp F7  &kp F8     &kp F9     &kp F10           &kp F11            &kp F12
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -74,10 +74,10 @@
 
         right_mo {
             bindings = <
-&trans  &trans           &trans       &trans     &trans      &trans       &trans     &kp EQUAL  &kp MINUS  &kp LBKT              &kp RBKT               &kp DEL
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp HOME         &kp PG_UP    &kp PG_DN  &kp END     &trans       &trans     &kp LEFT   &kp DOWN   &kp UP                &kp RIGHT              &trans
-                         &trans       &trans     &trans      &trans       &trans     &trans     &trans     &trans
+&trans  &trans           &trans       &trans     &trans      &trans               &trans     &kp EQUAL  &kp MINUS  &kp LBKT              &kp RBKT               &kp DEL
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT          &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp HOME         &kp PG_UP    &kp PG_DN  &kp END     &trans               &trans     &kp LEFT   &kp DOWN   &kp UP                &kp RIGHT              &trans
+                         &trans       &trans     &trans      &trans       &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -86,9 +86,9 @@
 
         Settings {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &trans    &bt BT_CLR_ALL     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans        &trans        &trans    &ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&bootloader   &trans        &kp CAPS  &soft_off          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &trans    &bt BT_CLR_ALL     &trans  &trans          &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans        &trans        &trans    &ext_power EP_TOG  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader   &trans        &kp CAPS  &soft_off          &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                             &trans    &trans             &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
