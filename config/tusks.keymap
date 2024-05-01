@@ -68,7 +68,7 @@
             bindings = <
 &trans  &trans           &trans       &trans     &trans      &trans       &trans     &kp EQUAL  &kp MINUS  &kp LBKT              &kp RBKT               &kp DEL
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp HOME         &kp PG_UP    &kp PG_DN  &kp END     &trans       &trans     &kp LEFT   &kp DOWN   &kp UP                &kp UP                 &trans
+&trans  &kp HOME         &kp PG_UP    &kp PG_DN  &kp END     &trans       &trans     &kp LEFT   &kp DOWN   &kp UP                &kp RIGHT              &trans
                          &trans       &trans     &trans      &trans       &trans     &trans     &trans     &trans
             >;
 
