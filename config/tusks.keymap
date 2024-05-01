@@ -42,10 +42,10 @@
 
         base {
             bindings = <
-&mt TILDE TAB  &kp Q  &kp W        &kp F           &kp P            &kp B        &kp J  &kp L                &kp U          &kp Y     &kp SEMI             &kp BSPC
-&kp LSHFT      &kp A  &kp R        &kp S           &kp T            &kp G        &kp M  &kp N                &kp E          &kp I     &kp O                &kp SQT
-&kp LCTRL      &kp Z  &sm LC(X) X  &sm LC(C) C     &sm LG(D) D      &sm LC(V) V  &kp K  &kp H                &kp COMMA      &kp DOT   &mt BACKSLASH SLASH  &mt GRAVE ESC
-                      &kp LALT     &key_mo 1 LGUI  &sm LSHFT SPACE  &kp K_PP     &mo 3  &sm BACKSPACE ENTER  &key_mo 2 DEL  &kp LGUI
+&mt TILDE TAB  &kp Q        &sm LC(W) W  &sm LC(F) F     &kp P            &kp B        &kp J  &kp L                &kp U          &kp Y     &kp SEMI             &kp BSPC
+&kp LSHFT      &sm LC(A) A  &sm LC(R) R  &sm LC(S) S     &sm LC(T) T      &kp G        &kp M  &kp N                &kp E          &kp I     &kp O                &kp SQT
+&kp LCTRL      &sm LS(Z) Z  &sm LC(X) X  &sm LC(C) C     &sm LG(D) D      &sm LC(V) V  &kp K  &kp H                &kp COMMA      &kp DOT   &mt BACKSLASH SLASH  &mt GRAVE ESC
+                            &kp LALT     &key_mo 1 LGUI  &sm LSHFT SPACE  &kp K_PP     &mo 3  &sm BACKSPACE ENTER  &key_mo 2 DEL  &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp K_NEXT K_PREVIOUS>;
