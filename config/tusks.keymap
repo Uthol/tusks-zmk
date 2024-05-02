@@ -50,10 +50,10 @@
 
         base {
             bindings = <
-&mt TILDE TAB  &kp Q             &cz LC(W) W  &cz LC(F) F   &kp P            &kp G              &kp J                &kp L  &kp U      &kp Y    &kp SEMI             &kp BSPC
-&kp LSHFT      &cz LS(A) A       &cz LC(R) R  &cz LC(S) S   &cz LC(T) T      &kp D              &kp M                &kp N  &kp E      &kp I    &kp O                &kp SQT
-&kp LCTRL      &cz LC(K_UNDO) Z  &cz K_CUT X  &cz K_COPY C  &cz K_PASTE V    &kp B              &kp K                &kp H  &kp COMMA  &kp DOT  &mt BACKSLASH SLASH  &mt GRAVE ESC
-                                 &kp LWIN     &mo 1         &sm LSHFT SPACE  &kp C_PLAY  &mo 3  &sm BACKSPACE ENTER  &mo 2  &kp LALT
+&mt TILDE TAB  &kp Q             &cz LC(W) W  &cz LC(F) F   &kp P            &kp G                    &kp J                &kp L  &kp U      &kp Y    &kp SEMI             &kp BSPC
+&kp LSHFT      &cz LS(A) A       &cz LC(R) R  &cz LC(S) S   &cz LC(T) T      &kp D                    &kp M                &kp N  &kp E      &kp I    &kp O                &kp SQT
+&kp LCTRL      &cz LC(K_UNDO) Z  &cz K_CUT X  &cz K_COPY C  &cz K_PASTE V    &kp B                    &kp K                &kp H  &kp COMMA  &kp DOT  &mt BACKSLASH SLASH  &mt GRAVE ESC
+                                 &kp LWIN     &mo 1         &sm LSHFT SPACE  &kp C_PLAY_PAUSE  &mo 3  &sm BACKSPACE ENTER  &mo 2  &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
@@ -67,6 +67,8 @@
 &trans  &trans    &trans     &trans     &trans   &trans          &trans  &trans     &trans     &trans    &trans    &trans
                   &trans     &trans     &trans   &trans  &trans  &trans  &trans     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         sym {
