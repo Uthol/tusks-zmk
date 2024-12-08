@@ -7,6 +7,7 @@ requires: [nice_nano_v2]
 features:
   - keys
   - encoder
+  - studio
 siblings:
   - tusks_left
   - tusks_right

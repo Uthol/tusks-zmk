@@ -1,15 +1,10 @@
-/*
- * Copyright (c) 2024 Uthol
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/tusks/layout_tusks.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        zmk,matrix-transform = &layout_tusks;
     };
 
     default_transform: keymap_transform_0 {
