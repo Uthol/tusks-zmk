@@ -86,12 +86,12 @@
 			>;
 		};
 		
-		Settings {
+		settings {
 			bindings = <
 			&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR  &bt BT_CLR_ALL     &bt BT_DISC 0  &bt BT_DISC 1          &trans  &trans  &trans  &trans  &trans  &bootloader
 			&trans        &trans          &trans      &ext_power EP_TOG  &trans         &trans                 &trans  &trans  &trans  &trans  &trans  &trans
 			&bootloader   &kp KP_NUMLOCK  &kp CAPS    &soft_off          &trans         &to 0                  &trans  &trans  &trans  &trans  &trans  &trans
-			&none       &tog 1             &trans         &trans         &trans  &trans  &trans  &trans
+			&none       &tog 1             &trans         &trans         &trans  &trans  &trans  &studio_unlock
 			>;
 		};
 	};
