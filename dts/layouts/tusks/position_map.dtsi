@@ -1,5 +1,5 @@
 / {
-    tusks_position_map: tusks_position_map {
+    layouts_tusks_position_map: layouts_tusks_position_map {
         compatible = "zmk,physical-layout-position-map";
 
         complete;
