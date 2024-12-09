@@ -2,7 +2,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    tusks_layout: tusks_6col_layout {
+    tusks_layout: tusks_layout {
         compatible = "zmk,physical-layout";
         display-name = "6 Column";
 
