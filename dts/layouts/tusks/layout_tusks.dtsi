@@ -5,6 +5,8 @@
      layout_tusks: layout_tusks {
          compatible = "zmk,physical-layout";
          display-name = "Default";
+         transform = <&default_transform>;
+         kscan = <&kscan0>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   37       0     0     0>
             , <&key_physical_attrs 100 100  100   37       0     0     0>
@@ -55,7 +57,7 @@
  };
 
 &layout_tusks_position_map {
-    layout_tusks_posmap: six {
+    layout_tusks_posmap: default {
         physical-layout = <&layout_tusks>;
         positions
             = < 0  1  2  3  4  5        6  7  8  9 10 11>
