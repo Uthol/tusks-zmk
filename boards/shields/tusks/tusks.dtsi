@@ -55,6 +55,6 @@ sensors: sensors {
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,physical-layout = &layout_tusks;
+		zmk,physical-layout = &tusks_layout;
 	};
 };
