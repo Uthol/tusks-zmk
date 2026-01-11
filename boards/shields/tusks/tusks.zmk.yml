@@ -11,3 +11,4 @@ features:
 siblings:
   - tusks_left
   - tusks_right
+  - tusks_dongle

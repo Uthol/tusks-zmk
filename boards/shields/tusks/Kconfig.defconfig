@@ -1,15 +1,19 @@
-if SHIELD_TUSKS_LEFT
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_TUSKS_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Tusk MK II"
+    default "Tusks"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT
+if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT || SHIELD_TUSKS_DONGLE
 
 config ZMK_SPLIT
     default y
+
 endif

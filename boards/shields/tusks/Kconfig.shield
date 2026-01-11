@@ -1,5 +1,11 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 config SHIELD_TUSKS_LEFT
     def_bool $(shields_list_contains,tusks_left)
 
 config SHIELD_TUSKS_RIGHT
     def_bool $(shields_list_contains,tusks_right)
+
+config SHIELD_TUSKS_DONGLE
+    def_bool $(shields_list_contains,tusks_dongle)
