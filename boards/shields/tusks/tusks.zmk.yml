@@ -4,10 +4,13 @@ name: Tusks MK II
 type: shield
 url: https://github.com/Uthol/tusks-zmk/
 requires: [nice_nano_v2]
+exposes:
+  - i2c_oled
 features:
   - keys
   - encoder
   - studio
+  - display
 siblings:
   - tusks_left
   - tusks_right
