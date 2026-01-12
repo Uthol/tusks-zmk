@@ -1,21 +1,13 @@
-if SHIELD_TUSKS_DONGLE || SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-endif # SHIELD_TUSKS_DONGLE || SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT
-
 if SHIELD_TUSKS_DONGLE
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-if ZMK_SPLIT_ROLE_CENTRAL
 
 config ZMK_KEYBOARD_NAME
     default "Tusks"
 
-endif # ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
 if ZMK_DISPLAY
 
 config I2C
@@ -27,6 +19,8 @@ config SSD1306
 choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
+
+endif
 
 if LVGL
 
@@ -43,8 +37,11 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif # LVGL
+endif
 
-endif # ZMK_DISPLAY
+if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT || SHIELD_TUSKS_DONGLE
 
-endif # SHIELD_TUSKS_DONGLE
+config ZMK_SPLIT
+    default y
+
+endif
