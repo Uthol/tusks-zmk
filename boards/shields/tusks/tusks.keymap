@@ -22,7 +22,6 @@
 	behaviors {
 		sm: space_mod {
 			compatible = "zmk,behavior-hold-tap";
-			label = "SPACE_MOD";
 			#binding-cells = <2>;
 			flavor = "tap-preferred";
 			tapping-term-ms = <175>;
@@ -32,7 +31,6 @@
 		
 		cz: cz {
 			compatible = "zmk,behavior-hold-tap";
-			label = "CZ";
 			#binding-cells = <2>;
 			flavor = "tap-preferred";
 			tapping-term-ms = <350>;
@@ -47,14 +45,14 @@
 		
 		base {
 			bindings = <
-			&kp TAB    &kp Q  &kp W     &kp F  &kp P            &kp G                    &kp J      &kp L  &kp U          &kp Y    &kp SEMI             &kp BSPC
-			&kp LSHFT  &kp A  &kp R     &kp S  &kp T            &kp D                    &kp H      &kp N  &kp E          &kp I    &kp O                &kp SQT
-			&kp LCTRL  &kp Z  &kp X     &kp C  &kp V            &kp B                    &kp K      &kp M  &kp COMMA      &kp DOT  &mt BACKSLASH SLASH  &mt GRAVE ESC
-			&kp LALT  &mo 2  &sm LSHFT SPACE  &mo 4  &kp C_PLAY_PAUSE  &kp ENTER  &mo 3  &kp LEFT_META
+			&kp TAB    &kp Q  &kp W  &kp F  &kp P  &kp G                    			&kp J      &kp L  &kp U          &kp Y    &kp SEMI             &kp BSPC
+			&kp LSHFT  &kp A  &kp R  &kp S  &kp T  &kp D                   			    &kp H      &kp N  &kp E          &kp I    &kp O                &kp SQT
+			&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B                   	 			&kp K      &kp M  &kp COMMA      &kp DOT  &mt BACKSLASH SLASH  &kp GRAVE ESC
+							      &kp LALT  &mo 2  &kp SPACE  &kp Z	 			&kp D 	&kp ENTER  &mo 3  &kp LEFT_META
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_PREVIOUS C_NEXT>;
-			label = "base";
+			display-name = "base";
 		};
 		
 		qwerty {
