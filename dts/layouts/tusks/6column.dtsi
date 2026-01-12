@@ -7,7 +7,7 @@
 		display-name = "6 Column";
 		
       	keys
-		// Row 0
+
 		= <&key_physical_attrs 100 100    0   36     0     0     0>
 		, <&key_physical_attrs 100 100  100   36     0     0     0>
 		, <&key_physical_attrs 100 100  200   11     0     0     0>
@@ -22,7 +22,7 @@
 		, <&key_physical_attrs 100 100 1300   36     0     0     0>
 		, <&key_physical_attrs 100 100 1400   36     0     0     0>
 
-		// Row 1
+
 		, <&key_physical_attrs 100 100    0  136     0     0     0>
 		, <&key_physical_attrs 100 100  100  136     0     0     0>
 		, <&key_physical_attrs 100 100  200  111     0     0     0>
@@ -37,7 +37,7 @@
 		, <&key_physical_attrs 100 100 1300  136     0     0     0>
 		, <&key_physical_attrs 100 100 1400  136     0     0     0>
 
-		// Row 2
+
 		, <&key_physical_attrs 100 100    0  236     0     0     0>
 		, <&key_physical_attrs 100 100  100  236     0     0     0>
 		, <&key_physical_attrs 100 100  200  211     0     0     0>
@@ -52,7 +52,7 @@
 		, <&key_physical_attrs 100 100 1300  236     0     0     0>
 		, <&key_physical_attrs 100 100 1400  236     0     0     0>
 
-		// Thumbs
+
 		, <&key_physical_attrs 100 100  348  313     0     0     0>
 		, <&key_physical_attrs 100 100  348  313  1500   398   788>
 		, <&key_physical_attrs 100 100  348  313  3000   398   788>
