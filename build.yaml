@@ -6,20 +6,20 @@
 # distinguish build outputs from each other:
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: tusks_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: tusk_left
 
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: tusks_right
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: tusk_right
 
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: tusks_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=y -DCONFIG_ZMK_DONGLE_DISPLAY_WPM=y
     artifact-name: tusks_dongle dongle_display
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: settings_reset
