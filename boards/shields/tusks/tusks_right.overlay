@@ -30,7 +30,5 @@
 		    <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
 		    <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 		    wakeup-source;
-		;
-
 	};
 };
