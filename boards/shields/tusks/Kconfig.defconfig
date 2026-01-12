@@ -9,6 +9,8 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
 endif
 
 if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT || SHIELD_TUSKS_DONGLE
