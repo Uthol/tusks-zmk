@@ -8,6 +8,7 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
 endif
 
 if ZMK_DISPLAY
@@ -39,10 +40,6 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif
-
-config ZMK_USB
-    default y
 endif
 
 if SHIELD_TUSKS_LEFT || SHIELD_TUSKS_RIGHT || SHIELD_TUSKS_DONGLE
