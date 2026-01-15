@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "tusks-layouts.dtsi"
 / {
-
 	chosen {
         zmk,physical-layout = &physical_layout0;
 	};
